@@ -48,6 +48,18 @@ sns.kdeplot(df['X1 transaction date'], shade=True, color='coral')
 plt.title('Densidad de X1 transaction date')
 plt.show()
 
+sns.kdeplot(df['X2 house age'], shade=True, color='coral')
+plt.title('Densidad de X1 transaction date')
+plt.show()
+
+sns.kdeplot(df['X3 distance to the nearest MRT station'], shade=True, color='coral')
+plt.title('Densidad de X1 transaction date')
+plt.show()
+
+sns.kdeplot(df['X4 number of convenience stores'], shade=True, color='coral')
+plt.title('Densidad de X1 transaction date')
+plt.show()
+
 # 5. Correlaciones 
 
 corr_matrix = df.corr(numeric_only=True)
