@@ -66,7 +66,7 @@ plt.show()
 # 6. Insights adicionales
 
 for col in df.select_dtypes(include='number'):
-    print(f"📈 Columna: {col}")
+    print(f"  Columna: {col}")
     print(f"  Media: {df[col].mean():.2f}")
     print(f"  Mediana: {df[col].median():.2f}")
     print(f"  Desviación estándar: {df[col].std():.2f}")
