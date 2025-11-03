@@ -7,9 +7,9 @@ from scipy.stats import skew
 
 # 1. Carga de datos
 df = pd.read_csv('Real estate valuation data set.csv', 
-                 sep=';',              # Usar punto y coma como separador
-                 decimal=',',          # Usar coma como separador decimal
-                 thousands=None)       # No usar separador de miles
+                 sep=';',              
+                 decimal=',',          
+                 thousands=None)       
 
 # 2. Limpieza de datos
 # Eliminar duplicados
