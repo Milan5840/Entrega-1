@@ -60,6 +60,14 @@ sns.kdeplot(df['X4 number of convenience stores'], shade=True, color='coral')
 plt.title('Densidad de X4 number of convenience stores')
 plt.show()
 
+sns.kdeplot(df['X5 latitude'], shade=True, color='cyan')
+plt.title('Densidad de X5 latitude')
+plt.show()
+
+sns.kdeplot(df['X6 longitude'], shade=True, color='blue')
+plt.title('Densidad de X6 longitude')
+plt.show()
+
 # 5. Correlaciones 
 
 corr_matrix = df.corr(numeric_only=True)
