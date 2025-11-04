@@ -49,15 +49,15 @@ plt.title('Densidad de X1 transaction date')
 plt.show()
 
 sns.kdeplot(df['X2 house age'], shade=True, color='coral')
-plt.title('Densidad de X1 transaction date')
+plt.title('Densidad de X2 house age')
 plt.show()
 
 sns.kdeplot(df['X3 distance to the nearest MRT station'], shade=True, color='coral')
-plt.title('Densidad de X1 transaction date')
+plt.title('Densidad de X3 distance to the nearest MRT station')
 plt.show()
 
 sns.kdeplot(df['X4 number of convenience stores'], shade=True, color='coral')
-plt.title('Densidad de X1 transaction date')
+plt.title('Densidad de X4 number of convenience stores')
 plt.show()
 
 # 5. Correlaciones 
