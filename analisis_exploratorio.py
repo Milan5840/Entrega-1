@@ -71,8 +71,23 @@ plt.title('Mapa de correlación entre variables numéricas')
 plt.show()
 
 print(df.corr(numeric_only=True)['X1 transaction date'].sort_values(ascending=False))
-sns.scatterplot(x='X1 transaction date', y='X2 house age', data=df)
-plt.title('Relación entre X1 transaction date y X2 house age')
+sns.scatterplot(x='X1 transaction date', y='Y house price of unit area', data=df)
+plt.title('Relación entre X1 transaction date y Y house price of unit area')
+plt.show()
+
+print(df.corr(numeric_only=True)['X5 latitude'].sort_values(ascending=False))
+sns.scatterplot(x='X5 latitude', y='Y house price of unit area', data=df)
+plt.title('Relación entre X5 latitude y Y house price of unit area')
+plt.show()
+
+print(df.corr(numeric_only=True)['X6 longitude'].sort_values(ascending=False))
+sns.scatterplot(x='X6 longitude', y='Y house price of unit area', data=df)
+plt.title('Relación entre X6 longitude y Y house price of unit area')
+plt.show()
+
+print(df.corr(numeric_only=True)['X3 distance to the nearest MRT station'].sort_values(ascending=False))
+sns.scatterplot(x='X3 distance to the nearest MRT station', y='Y house price of unit area', data=df)
+plt.title('Relación entre X3 distance to the nearest MRT station y Y house price of unit area')
 plt.show()
 
 # 6. Insights adicionales
