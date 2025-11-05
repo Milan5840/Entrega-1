@@ -48,7 +48,7 @@ sns.kdeplot(df['X1 transaction date'], shade=True, color='coral')
 plt.title('Densidad de X1 transaction date')
 plt.show()
 
-sns.kdeplot(df['X2 house age'], shade=True, color='coral')
+sns.kdeplot(df['X2 house age'], shade=True, color='red')
 plt.title('Densidad de X2 house age')
 plt.show()
 
