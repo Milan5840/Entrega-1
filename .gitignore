@@ -1,53 +1,24 @@
-# Python
+# generated
+.ipynb_checkpoints/
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+**my_dir/
+**logs/
+**models/
 
-# Entornos virtuales
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+# file types
+*.h5
+*.tflite
+*.keras
+*.zip
+*.pdf
 
-# Jupyter Notebook
-.ipynb_checkpoints
-*.ipynb
+# data folders
+**data/
 
-# VS Code
-.vscode/
-*.code-workspace
-
-# PyCharm
-.idea/
-
-# Archivos del sistema
-.DS_Store
-Thumbs.db
-
-# Archivos generados por el análisis
-*.csv
-!Real estate valuation data set.csv  # Mantener el archivo de datos original
-datos_limpios.csv  # Archivo generado por el análisis
-
-# Poetry
-poetry.lock
+# mlflow
+mlruns
+mlflow.db
+backend.db
+#*.html
+mlartifacts
+*.txt
