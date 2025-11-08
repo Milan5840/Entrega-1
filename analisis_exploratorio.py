@@ -8,7 +8,7 @@ import os
 
 # 1. Carga de datos
 current_dir = os.path.dirname(os.path.abspath(__file__))
-data_file = os.path.join(current_dir, 'Real estate valuation data set.csv')
+data_file = os.path.join(current_dir, 'data/Real estate valuation data set.csv')
 df = pd.read_csv(data_file, 
                  sep=';',              
                  decimal=',',          
@@ -26,7 +26,7 @@ for col in df.columns:
 # Eliminar filas con valores nulos
 df = df.dropna()
 print(df.dtypes)
-df.to_csv('datos_procesados.csv', index=False)
+df.to_csv('data/datos_procesados.csv', index=False)
 
 # 3. Analisis descriptivo
 
