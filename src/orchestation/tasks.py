@@ -1,6 +1,7 @@
 from prefect import flow, task
-from src.data.data_processing import load_and_process_data
-from src.models.train_model import train_and_evaluate
+
+from src.data.analisis_exploratorio import load_and_process_data
+from src.models.train_models import train_and_evaluate
 
 @task
 def get_data():
