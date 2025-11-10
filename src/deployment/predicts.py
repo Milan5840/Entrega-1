@@ -30,12 +30,12 @@ with mlflow.start_run():
         registered_model_name="random_forest_model"
     )
 
-print("✅ Modelo entrenado y registrado en MLflow.")
+print("Modelo entrenado y registrado en MLflow.")
 
 
 MODEL_PATH = "models:/random_forest_model/latest"
 model = mlflow.sklearn.load_model(MODEL_PATH)
-print("✅ Modelo cargado para servir en API.")
+print("Modelo cargado para servir en API.")
 
 # Configuración FastAPI
 app = FastAPI(title="Real Estate Prediction API")
